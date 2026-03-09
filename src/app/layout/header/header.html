@@ -28,16 +28,16 @@
       <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
+      <button mat-menu-item (click)="onLinkClick('home')">
         <span>Home</span>
       </button>
-      <button mat-menu-item>
+      <button mat-menu-item (click)="onLinkClick('about')">
         <span>About</span>
       </button>
-      <button mat-menu-item>
+      <button mat-menu-item (click)="onLinkClick('project')">
         <span>Projects</span>
       </button>
-      <button mat-menu-item>
+      <button mat-menu-item (click)="onLinkClick('contact')">
         <span>Contact</span>
       </button>
     </mat-menu>

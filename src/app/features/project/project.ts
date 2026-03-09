@@ -27,7 +27,7 @@ export class Project {
     },
     {
       title: 'WRSS & WROS',
-      image: 'assets/images/wrss.jpg',
+      image: 'assets/images/wrss_wross.jpg',
       description: 'HTML + CSS + JavaScript',
     },
     {

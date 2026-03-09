@@ -1,0 +1,21 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+section,
+.mat-button-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mobile-menu {
+  display: none;
+}
+
+@media(max-width:450px){
+    .mobile-menu {
+        display: block;
+    }
+    .mat-button-row{
+        display: none;
+    }
+}

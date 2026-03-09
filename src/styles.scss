@@ -1,0 +1,66 @@
+@use '@angular/material' as mat;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@include mat.core();
+
+/* Light Theme */
+$light-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+  )
+);
+
+/* Dark Theme */
+$dark-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: dark,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+  )
+);
+
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Apply light theme by default */
+:root {
+  @include mat.all-component-themes($light-theme);
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  // --bg-image: url('path/to/light-bg.jpg');
+  --primary-font: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Apply dark theme when class exists */
+:root.dark-theme {
+  @include mat.all-component-themes($dark-theme);
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  // --bg-image: url('path/to/dark-bg.jpg');
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased; /* Makes text look crisper on Mac */
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6; /* Improves readability as discussed */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em; /* Modern "tight" heading look */
+  font-weight: 700;
+}

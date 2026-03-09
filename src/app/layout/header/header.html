@@ -1,0 +1,46 @@
+<mat-toolbar>
+  <h1><span> < </span>NC <span> /> </span></h1>
+  <span class="example-spacer"></span>
+  <section>
+    <div class="mat-button-row">
+      <button matButton (click)="onLinkClick('home')">Home</button>
+      <button matButton (click)="onLinkClick('about')">About</button>
+      <button matButton (click)="onLinkClick('project')">Projects</button>
+      <button matButton (click)="onLinkClick('contact')">Contact</button>
+      <button matIconButton (click)="toggle()">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          [fontIcon]="themeIcon()"
+        ></mat-icon>
+      </button>
+    </div>
+  </section>
+  <section class="mobile-menu">
+    <button matIconButton (click)="toggle()">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        [fontIcon]="themeIcon()"
+      ></mat-icon>
+    </button>
+    <button matIconButton [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item>
+        <span>About</span>
+      </button>
+      <button mat-menu-item>
+        <span>Projects</span>
+      </button>
+      <button mat-menu-item>
+        <span>Contact</span>
+      </button>
+    </mat-menu>
+    <mat-divider></mat-divider>
+  </section>
+</mat-toolbar>

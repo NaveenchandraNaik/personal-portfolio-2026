@@ -1,0 +1,19 @@
+<section class="main-container" id="home">
+  <section class="img-container">
+    <img [src]="imgPath()" alt="developer" />
+  </section>
+  <section class="text-container">
+    <p class="title-text">Hi I'm Naveenchandra Naik</p>
+    <p class="title-subtext anim-typewriter">Frontend Developer Welcome to My Profile</p>
+    <section class="button-row">
+      <action-button color="warn" (buttonEvent)="downloadPdf()" label="Download CV"></action-button>
+      <action-button color="warn" (buttonEvent)="onClick('contact')" label="Lets talk"></action-button>
+    </section>
+    <section class="social-icons">
+      <a href="https://github.com/NaveenchandraNaik" class="icon" target="_blank"><app-icons iconName="faGithub" size="lg"></app-icons></a>
+      <a href="https://www.linkedin.com/in/naveenchandra-naik-a38668237/" class="icon" target="_blank"><app-icons iconName="faLinkedin" size="lg"></app-icons></a>
+      <a href="#" class="icon" target="_blank"><app-icons iconName="faTwitter" size="lg"></app-icons></a>
+      <a href="#" class="icon" target="_blank"><app-icons iconName="faFacebook" size="lg"></app-icons></a>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,316 @@
+<main class="main-container" id="about">
+  <section class="img-container">
+    <mat-card class="mat-elevation-z24">
+      <img [src]="imgPath()"  />
+      <section class="about-content">
+        <p>
+          Innovative frontend developer with 4+ years of experience in building and maintaining
+          responsive website. Proficient in HTML, CSS, javascript, Angular and modern library and
+          framework. Passionate about creating user-friendly web application and always eager to
+          learn new technologies. Seeking to leverage my skills and experience to contribute to a
+          dynamic team and help create exceptional digital experiences.
+        </p>
+      </section>
+    </mat-card>
+  </section>
+  <section class="about-me">
+    <mat-card class="mat-elevation-z24">
+      <mat-card-header><h1>About Me</h1></mat-card-header>
+      <mat-card-content>
+        <section>
+          <mat-tab-group animationDuration="1000ms">
+            <mat-tab label="Experience">
+              <mat-stepper orientation="vertical">
+                <mat-step>
+                  <ng-template matStepLabel>Utthunga Technologies Pvt. Ltd</ng-template>
+                  <ng-template matStepContent>
+                    <p><app-icons iconName="faUserTie" size="lg"></app-icons> Software Engineer</p>
+                    <p>
+                      <app-icons iconName="faCalendar" size="lg"></app-icons> March 2025 to July
+                      2025
+                    </p>
+                    <p><app-icons iconName="faLocationDot" size="lg"></app-icons> Bangalore</p>
+                    <button matButton matStepperNext>Next</button>
+                  </ng-template>
+                </mat-step>
+                <mat-step>
+                  <ng-template matStepLabel>Tata Consultancy Services</ng-template>
+                  <ng-template matStepContent>
+                    <p><app-icons iconName="faUserTie" size="lg"></app-icons> System Engineer</p>
+                    <p>
+                      <app-icons iconName="faCalendar" size="lg"></app-icons> June 2022 to Feb 2024
+                    </p>
+                    <p><app-icons iconName="faLocationDot" size="lg"></app-icons> Bangalore</p>
+                    <button matButton matStepperPrevious>Back</button>
+                    <button matButton matStepperNext>Next</button>
+                  </ng-template>
+                </mat-step>
+                <mat-step>
+                  <ng-template matStepLabel>Diverse Lynx India Private Limited</ng-template>
+                  <ng-template matStepContent>
+                    <p><app-icons iconName="faUserTie" size="lg"></app-icons> BA Associate</p>
+                    <p>
+                      <app-icons iconName="faCalendar" size="lg"></app-icons> June 2021 to June 2022
+                    </p>
+                    <p><app-icons iconName="faLocationDot" size="lg"></app-icons> Remote</p>
+                    <button matButton matStepperPrevious>Back</button>
+                    <button matButton matStepperNext>Next</button>
+                  </ng-template>
+                </mat-step>
+                <mat-step>
+                  <ng-template matStepLabel>Sun Plus Software</ng-template>
+                  <ng-template matStepContent>
+                    <p>
+                      <app-icons iconName="faUserTie" size="lg"></app-icons> Junior Software
+                      Engineer
+                    </p>
+                    <p>
+                      <app-icons iconName="faCalendar" size="lg"></app-icons> Apr 2019 - Apr 2021
+                    </p>
+                    <p><app-icons iconName="faLocationDot" size="lg"></app-icons> Bangalore</p>
+                    <button matButton matStepperPrevious>Back</button>
+                  </ng-template>
+                </mat-step>
+              </mat-stepper>
+            </mat-tab>
+            <mat-tab label="Education">
+              <mat-stepper orientation="vertical">
+                <mat-step>
+                  <ng-template matStepLabel>Bachelor of Engineering</ng-template>
+                  <ng-template matStepContent>
+                    <p>
+                      <app-icons iconName="faBuildingColumns" size="lg"></app-icons> Global Academy
+                      of Technology
+                    </p>
+                    <p><app-icons iconName="faCalendar" size="lg"></app-icons> 2018</p>
+                    <p><app-icons iconName="faLocationDot" size="lg"></app-icons> Bangalore</p>
+                    <button matButton matStepperPrevious>Back</button>
+                    <button matButton matStepperNext>Next</button>
+                  </ng-template>
+                </mat-step>
+                <mat-step>
+                  <ng-template matStepLabel>Pre-University</ng-template>
+                  <ng-template matStepContent>
+                    <p>
+                      <app-icons iconName="faBuildingColumns" size="lg"></app-icons> RNS PU College,
+                      Kundapur
+                    </p>
+                    <p><app-icons iconName="faCalendar" size="lg"></app-icons> 2014</p>
+                    <p><app-icons iconName="faLocationDot" size="lg"></app-icons> Kundapur</p>
+                    <button matButton matStepperPrevious>Back</button>
+                    <button matButton matStepperNext>Next</button>
+                  </ng-template>
+                </mat-step>
+                <mat-step>
+                  <ng-template matStepLabel>SSLC</ng-template>
+                  <p>
+                    <app-icons iconName="faBuildingColumns" size="lg"></app-icons> VKR Acharya
+                    Memorial Eng. Medium High School, Kundapur
+                  </p>
+                  <p><app-icons iconName="faCalendar" size="lg"></app-icons> 2012</p>
+                  <p><app-icons iconName="faLocationDot" size="lg"></app-icons> Kundapur</p>
+                  <button matButton matStepperPrevious>Back</button>
+                </mat-step>
+              </mat-stepper>
+            </mat-tab>
+            <mat-tab label="Skills">
+              <h3>Language:</h3>
+              <mat-chip-set aria-label="Skills selection">
+                <mat-chip class="mat-shadow-1">
+                  <img matChipAvatar src="https://cdn.simpleicons.org/html5/dt1100" alt="HTML5" />
+                  HTML5
+                </mat-chip>
+                <!-- <skill-chip
+                  src="https://cdn.simpleicons.org/html5/dt1100"
+                  alt="HTML5"
+                  label="HTML5"
+                ></skill-chip> -->
+                <mat-chip class="mat-shadow-1">
+                  <img matChipAvatar src="https://cdn.simpleicons.org/css/dt1100" alt="CSS" />
+                  CSS
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/javascript/dt1100"
+                    alt="JavaScript"
+                  />
+                  JavaScript
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/angular/dd1100"
+                    alt="Angular"
+                  />
+                  Angular
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/typescript/dt1100"
+                    alt="TypeScript"
+                  />
+                  TypeScript
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img matChipAvatar src="https://cdn.simpleicons.org/react/61DAFB" alt="React" />
+                  React
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="	https://cdn.simpleicons.org/wordpress/21759B"
+                    alt="WordPress"
+                  />
+                  WordPress
+                </mat-chip>
+              </mat-chip-set>
+              <h3>Libraries:</h3>
+              <mat-chip-set aria-label="Skills selection">
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/bootstrap/dt1100"
+                    alt="Bootstrap"
+                  />
+                  Bootstrap
+                </mat-chip>
+                <!-- <skill-chip
+                  src="https://cdn.simpleicons.org/bootstrap/dt1100"
+                  alt="Bootstrap"
+                  label="Bootstap"
+                  class="mat-shadow-1"
+                ></skill-chip> -->
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/tailwindcss/dt1100"
+                    alt="Tailwind CSS"
+                  />
+                  Tailwind CSS
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/sass/dt0000"
+                    alt="Sass"
+                  />
+                  Sass
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/codementor/dt1100"
+                    alt="Photo of a Shiba Inu"
+                  />
+                  Responsive Web Design
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/angular/21759B"
+                    alt="Angular Material"
+                  />
+                  Angular Material
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/reactivex/dt0000"
+                    alt="Rxjs"
+                  />
+                  Rxjs
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img matChipAvatar src="https://cdn.simpleicons.org/npm/dt1100" alt="npm" />
+                  NPM
+                </mat-chip>
+              </mat-chip-set>
+              <h3>Tools</h3>
+              <mat-chip-set aria-label="Skills selection">
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/figma/dt1100"
+                    alt="Figma"
+                  />
+                  Figma
+                </mat-chip>
+                <!-- <skill-chip
+                  src="https://cdn.simpleicons.org/figma/dt1100"
+                  alt="Figma"
+                  label="Figma"
+                  class="mat-shadow-1"
+                ></skill-chip> -->
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/searxng/dt0000"
+                    alt="Photo of a Shiba Inu"
+                  />
+                  SEO
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/bitbucket/0052cc"
+                    alt="Bitbucket"
+                  />
+                  Bitbucket
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img matChipAvatar src="https://cdn.simpleicons.org/git/dt1100" alt="Git" />
+                  Git
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/postman/dt1100"
+                    alt="Postman"
+                  />
+                  Postman
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/swagger/dt1100"
+                    alt="Swagger"
+                  />
+                  Swagger
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/codecrafters/dt0000"
+                    alt="VS Code"
+                  />
+                  VS Code
+                </mat-chip>
+                <mat-chip class="mat-shadow-1">
+                  <img
+                    matChipAvatar
+                    src="https://cdn.simpleicons.org/immich/000000"
+                    alt="AI Tools"
+                  />
+                  AI Tools
+                </mat-chip>
+              </mat-chip-set>
+            </mat-tab>
+            <mat-tab label="Certifications">
+              <mat-card class="mat-elevation-z24" class="certification-card"
+                >Generative AI Mastermind</mat-card
+              >
+              <mat-card class="mat-elevation-z24" class="certification-card"
+                >Python Using AI</mat-card
+              >
+              <mat-card class="mat-elevation-z24" class="certification-card"
+                >LPA Bootcamp -CodeEasy Academy</mat-card
+              >
+            </mat-tab>
+          </mat-tab-group>
+        </section>
+      </mat-card-content>
+    </mat-card>
+  </section>
+</main>

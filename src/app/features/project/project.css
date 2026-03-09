@@ -1,0 +1,77 @@
+.project-section {
+  width: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.carousel-section {
+  width: 970px;
+  padding: 2rem;
+  max-width: 100%;
+}
+:host ::ng-deep .owl-carousel {
+  height: auto;
+}
+
+:host ::ng-deep .owl-stage {
+  display: flex;
+  align-items: stretch;
+}
+
+:host ::ng-deep .owl-item {
+  display: flex;
+  align-items: center;
+  width: 350px !important;
+}
+.mat-shadow-1 {
+  box-shadow: var(--mat-sys-level1);
+  border: none;
+}
+.project-card {
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+  background: rgba(255, 255, 255, 0.05); 
+  
+  /* The "Frosted Glass" effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* Subtle border to define the shape */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  
+  /* Soft shadow for depth */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+  
+}
+}
+
+.project-card img {
+  max-width: 300px;
+  width: 300px;
+  height: 300px;
+  max-height: 200px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-wrapper {
+  padding: 15px; /* Provides space for the shadow to appear */
+}

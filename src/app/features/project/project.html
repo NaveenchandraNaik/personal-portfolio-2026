@@ -1,0 +1,22 @@
+<section class="project-section" id="project">
+    <section class="header">
+        <h1>Projects</h1>
+    </section>
+    <section class="carousel-section">
+  <owl-carousel-o [options]="customOptions">
+    @for (project of projects; track project.title) {
+      <ng-template carouselSlide>
+        <div class="card-wrapper">
+        <mat-card class="project-card mat-elevation-z24" appearance="outlined">
+          <img mat-card-image [src]="project.image" alt="project" />
+          <mat-card-content>
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+          </mat-card-content>
+        </mat-card>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+  </section>
+</section>

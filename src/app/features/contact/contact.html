@@ -8,10 +8,21 @@
       <p><app-icons iconName="faLocationDot" size="lg"></app-icons> Bangalore, India</p>
     </section>
     <section class="social-icons">
-      <a href="https://github.com/NaveenchandraNaik" class="icon" target="_blank"><app-icons iconName="faGithub" size="lg"></app-icons></a>
-      <a href="https://www.linkedin.com/in/naveenchandra-naik-a38668237/" class="icon" target="_blank"><app-icons iconName="faLinkedin" size="lg"></app-icons></a>
-      <a href="#" class="icon" target="_blank"><app-icons iconName="faTwitter" size="lg"></app-icons></a>
-      <a href="#" class="icon" target="_blank"><app-icons iconName="faFacebook" size="lg"></app-icons></a>
+      <a href="https://github.com/NaveenchandraNaik" class="icon" target="_blank"
+        ><app-icons iconName="faGithub" size="lg"></app-icons
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/naveenchandra-naik-a38668237/"
+        class="icon"
+        target="_blank"
+        ><app-icons iconName="faLinkedin" size="lg"></app-icons
+      ></a>
+      <a href="#" class="icon" target="_blank"
+        ><app-icons iconName="faTwitter" size="lg"></app-icons
+      ></a>
+      <a href="#" class="icon" target="_blank"
+        ><app-icons iconName="faFacebook" size="lg"></app-icons
+      ></a>
     </section>
     <section>
       <action-button color="primary" label="Download CV" (buttonEvent)="download()"></action-button>
@@ -24,11 +35,11 @@
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Your Subject</mat-label>
-      <input matInput />
+      <input matInput [value]="subject()" (input)="updateSubject($event)" />
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Your Message</mat-label>
-      <textarea matInput></textarea>
+      <textarea matInput [value]="message()" (input)="updateMessage($event)"></textarea>
     </mat-form-field>
     <action-button color="primary" label="Submit" (buttonEvent)="submitForm()"></action-button>
   </section>

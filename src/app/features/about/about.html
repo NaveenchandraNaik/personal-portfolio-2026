@@ -1,7 +1,7 @@
 <main class="main-container" id="about">
   <section class="img-container">
     <mat-card class="mat-elevation-z24">
-      <img [src]="imgPath()"  />
+      <img [src]="imgPath()" />
       <section class="about-content">
         <p>
           Innovative frontend developer with 4+ years of experience in building and maintaining
@@ -191,11 +191,7 @@
                   Tailwind CSS
                 </mat-chip>
                 <mat-chip class="mat-shadow-1">
-                  <img
-                    matChipAvatar
-                    src="https://cdn.simpleicons.org/sass/dt0000"
-                    alt="Sass"
-                  />
+                  <img matChipAvatar src="https://cdn.simpleicons.org/sass/dt0000" alt="Sass" />
                   Sass
                 </mat-chip>
                 <mat-chip class="mat-shadow-1">
@@ -230,11 +226,7 @@
               <h3>Tools</h3>
               <mat-chip-set aria-label="Skills selection">
                 <mat-chip class="mat-shadow-1">
-                  <img
-                    matChipAvatar
-                    src="https://cdn.simpleicons.org/figma/dt1100"
-                    alt="Figma"
-                  />
+                  <img matChipAvatar src="https://cdn.simpleicons.org/figma/dt1100" alt="Figma" />
                   Figma
                 </mat-chip>
                 <!-- <skill-chip
@@ -298,15 +290,36 @@
               </mat-chip-set>
             </mat-tab>
             <mat-tab label="Certifications">
-              <mat-card class="mat-elevation-z24" class="certification-card"
-                >Generative AI Mastermind</mat-card
-              >
-              <mat-card class="mat-elevation-z24" class="certification-card"
-                >Python Using AI</mat-card
-              >
-              <mat-card class="mat-elevation-z24" class="certification-card"
-                >LPA Bootcamp -CodeEasy Academy</mat-card
-              >
+              <mat-card class="certification-card mat-elevation-z24">
+                <mat-card-header>
+                  <div mat-card-avatar class="header-image">
+                    <img src="../../../assets/images/logo/outskillcom_logo.jpg" alt="outskill">
+                  </div>
+                  <mat-card-title>Generative AI Mastermind</mat-card-title>
+                  <mat-card-subtitle>OutSkills</mat-card-subtitle>
+                  <a mat-button href="assets/images/certificate/AI_Mastermind_Certificate.jpg" target="_blank"><app-icons iconName="faAward" size="lg"></app-icons></a>
+                </mat-card-header>
+              </mat-card>
+              <mat-card class="certification-card mat-elevation-z24">
+                <mat-card-header>
+                  <div mat-card-avatar class="header-image">
+                    <img src="../../../assets/images/logo/ai_for_techies_logo.jpg" alt="outskill">
+                  </div>
+                  <mat-card-title>Python Using AI</mat-card-title>
+                  <mat-card-subtitle>AI For Techies</mat-card-subtitle>
+                  <a mat-button href="assets/images/certificate/AI_For_Techie_Certificate.png" target="_blank"><app-icons iconName="faAward" size="lg"></app-icons></a>
+                </mat-card-header>
+              </mat-card>
+              <mat-card class="certification-card mat-elevation-z24">
+                <mat-card-header>
+                  <div mat-card-avatar class="header-image">
+                    <img src="../../../assets/images/logo/codeeasyacademy_logo.jpg" alt="outskill">
+                  </div>
+                  <mat-card-title>LPA Bootcamp</mat-card-title>
+                  <mat-card-subtitle>CodeEasy Academy</mat-card-subtitle>
+                   <a mat-button href="assets/images/certificate/LPA_Bootcamp_Certificate.jpeg" target="_blank"><app-icons iconName="faAward" size="lg"></app-icons></a>
+                </mat-card-header>
+              </mat-card>
             </mat-tab>
           </mat-tab-group>
         </section>

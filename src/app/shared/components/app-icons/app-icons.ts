@@ -1,7 +1,7 @@
 import { Component, input, computed } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faBuildingColumns, faCalendar, faEnvelope, faFilePdf, faLocationDot, faPhone, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { faBuildingColumns, faCalendar, faEnvelope, faFilePdf, faLocationDot, faPhone, faUserTie,faAward } from '@fortawesome/free-solid-svg-icons';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
@@ -25,7 +25,8 @@ export class AppIcons {
     faUserTie,
     faCalendar,
     faLocationDot,
-    faBuildingColumns
+    faBuildingColumns,
+    faAward
   };
   
   icon = computed(() => {

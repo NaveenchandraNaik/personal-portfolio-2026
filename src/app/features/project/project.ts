@@ -27,17 +27,17 @@ export class Project {
     },
     {
       title: 'WRSS & WROS',
-      image: 'assets/images/wrss_wross.jpg',
+      image: 'assets/images/WRSS.jpg',
       description: 'HTML + CSS + JavaScript',
     },
     {
       title: 'Excelsior Certification',
-      image: 'assets/images/excelsior_certification.jpeg',
+      image: 'assets/images/Excelsior Certification.jpeg',
       description: 'Wordpress + Elementor',
     },
     {
       title: 'GTG Perfume',
-      image: 'assets/images/gtg_perfume.png',
+      image: 'assets/images/GTG.png',
       description: 'HTML + CSS + JavaScript',
     },
   ];

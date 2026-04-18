@@ -27,4 +27,5 @@ export class About {
       // this.blendMode.update((m)=> m === 'darken' ? 'darken':'lighten');
     })
   }
+
 }

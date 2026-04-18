@@ -32,7 +32,7 @@ export class Project {
     },
     {
       title: 'Excelsior Certification',
-      image: 'assets/images/Excelsior Certification.jpeg',
+      image: 'assets/images/Excelsior_Certification.jpeg',
       description: 'Wordpress + Elementor',
     },
     {
